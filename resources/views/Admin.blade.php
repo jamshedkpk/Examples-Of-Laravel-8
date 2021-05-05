@@ -276,6 +276,96 @@ Upload File
 </a>
 </td>
 </tr>
+<tr>
+<td>28</td>
+<td>Controller28</td>
+<td>Controller_28</td>
+<td><a href="{{route('controller28.index')}}">
+Pagination
+</a>
+</td>
+</tr>
+<tr>
+<td>29</td>
+<td>Controller29</td>
+<td>Controller_29</td>
+<td><a href="{{route('controller29')}}">
+Signin
+</a>
+</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Controller30</td>
+<td>Controller_30</td>
+<td><a href="{{route('controller30')}}">
+Signout
+</a>
+</td>
+</tr>
+<tr>
+<td>31</td>
+<td>Controller31</td>
+<td>Controller_31</td>
+<td><a href="{{route('controller31')}}">
+Accessors
+</a>
+</td>
+</tr>
+<tr>
+<td>32</td>
+<td>Controller32</td>
+<td>Controller_32</td>
+<td><a href="{{route('controller32')}}">
+Mutators
+</a>
+</td>
+</tr>
+<tr>
+<td>33</td>
+<td>Controller33</td>
+<td>Controller_33</td>
+<td><a href="{{route('controller33.index')}}">
+One To One Relationship
+</a>
+</td>
+</tr>
+<tr>
+<td>34</td>
+<td>Controller34</td>
+<td>Controller_34</td>
+<td><a href="{{route('controller34.index')}}">
+One To Many Relationship
+</a>
+</td>
+</tr>
+<tr>
+<td>35</td>
+<td>Controller35</td>
+<td>Controller_35</td>
+<td><a href="{{route('controller35.index')}}">
+Many To Many Relationship
+</a>
+</td>
+</tr>
+<tr>
+<td>36</td>
+<td>Controller36</td>
+<td>Controller_36</td>
+<td><a href="{{route('controller36.index')}}">
+Stubs
+</a>
+</td>
+</tr>
+<tr>
+<td>37</td>
+<td>Controller37</td>
+<td>Controller_37</td>
+<td><a href="{{route('controller37.index')}}">
+Route Model Binding
+</a>
+</td>
+</tr>
 </table>
 </div>
 @endsection

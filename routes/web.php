@@ -61,6 +61,16 @@ use App\Http\Controllers\Controller_24;
 use App\Http\Controllers\Controller_25;
 use App\Http\Controllers\Controller_26;
 use App\Http\Controllers\Controller_27;
+use App\Http\Controllers\Controller_28;
+use App\Http\Controllers\Controller_29;
+use App\Http\Controllers\Controller_30;
+use App\Http\Controllers\Controller_31;
+use App\Http\Controllers\Controller_32;
+use App\Http\Controllers\Controller_33;
+use App\Http\Controllers\Controller_34;
+use App\Http\Controllers\Controller_35;
+use App\Http\Controllers\Controller_36;
+use App\Http\Controllers\Controller_37;
 
 
 Route::get('/', [AdminController::class, 'index']);
@@ -84,10 +94,13 @@ Route::resource('/controller16',Controller_16::class);
 Route::resource('/controller17',Controller_17::class);
 Route::resource('/controller18',Controller_18::class);
 Route::get('/controller19',[Controller_19::class,'index'])->name('controller19');
+
+// Example of group middleware 
 Route::group(['middleware'=>['mypages']],function(){
 Route::get('/controller20',[Controller_20::class,'index'])->name('controller20');	
 //// Other routes can be defined here...
 });
+// routed middleware
 Route::middleware('myroute')->get('/controller21',[Controller_21::class,'index'])->name('controller21');
 Route::get('/controller22',[Controller_22::class,'index'])->name('controller22');
 
@@ -96,3 +109,22 @@ Route::resource('/controller24',Controller_24::class);
 Route::resource('/controller25',Controller_25::class);
 Route::resource('/controller26',Controller_26::class);
 Route::resource('/controller27',Controller_27::class);
+Route::resource('/controller28',Controller_28::class);
+
+Route::middleware('signin')->get('/controller29',[Controller_29::class,'index'])->name('controller29');
+
+Route::middleware('signin')->post('/controller29',[Controller_29::class,'signin'])->name('signin');
+
+Route::middleware('signout')->get('/controller30',[Controller_30::class,'index'])->name('controller30');
+
+Route::middleware('signout')->post('/controller30/signout',[Controller_30::class,'signout'])->name('signout');
+
+
+Route::get('/controller31',[Controller_31::class,'index'])->name('controller31');
+Route::get('/controller32',[Controller_32::class,'index'])->name('controller32');
+Route::resource('/controller33',Controller_33::class);
+Route::resource('/controller34',Controller_34::class);
+Route::resource('/controller35',Controller_36::class);
+Route::resource('/controller36',Controller_36::class);
+
+Route::resource('/controller37/{key:student_name}',Controller_37::class);

@@ -14,6 +14,8 @@ class Kernel extends HttpKernel
     protected $middleware = [
         // \App\Http\Middleware\TrustHosts::class,
         // My Global Middleware
+              \Illuminate\Session\Middleware\StartSession::class,
+    
                \App\Http\Middleware\Middleware_1::class,
  
         \App\Http\Middleware\TrustProxies::class,
@@ -30,6 +32,7 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middlewareGroups = [
+
         'web' => [
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
@@ -69,5 +72,8 @@ class Kernel extends HttpKernel
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         //my middleware
         'myroute'=>\App\Http\Middleware\Middleware_3::class,
+        'signin'=>\App\Http\Middleware\Signin::class,
+        'signout'=>\App\Http\Middleware\Signout::class,
+
     ];
 }
