@@ -71,6 +71,8 @@ use App\Http\Controllers\Controller_34;
 use App\Http\Controllers\Controller_35;
 use App\Http\Controllers\Controller_36;
 use App\Http\Controllers\Controller_37;
+use App\Http\Controllers\Controller_38;
+use App\Http\Controllers\Controller_39;
 
 
 Route::get('/', [AdminController::class, 'index']);
@@ -124,7 +126,13 @@ Route::get('/controller31',[Controller_31::class,'index'])->name('controller31')
 Route::get('/controller32',[Controller_32::class,'index'])->name('controller32');
 Route::resource('/controller33',Controller_33::class);
 Route::resource('/controller34',Controller_34::class);
-Route::resource('/controller35',Controller_36::class);
+Route::resource('/controller35',Controller_35::class);
 Route::resource('/controller36',Controller_36::class);
+Route::resource('/controller37',Controller_37::class);
+Route::resource('/controller38',Controller_38::class);
 
-Route::resource('/controller37/{key:student_name}',Controller_37::class);
+Route::get('/controller39/search',[Controller_39::class,'search'])->name('search');
+
+
+Route::resource('/controller39',Controller_39::class);
+

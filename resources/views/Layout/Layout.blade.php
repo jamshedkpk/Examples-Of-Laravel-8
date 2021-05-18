@@ -37,4 +37,6 @@
 @yield('Many To Many Relationship')
 @yield('Stubs')
 @yield('Route Model Binding')
+@yield('Ajax Request')
+@yield('CRUD Operation Through Ajax')
 @include('Layout.Footer')

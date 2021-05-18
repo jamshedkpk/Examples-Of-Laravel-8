@@ -2,7 +2,7 @@
 @section('Route Model Binding')
 <br>
 <center>
-<h3>Stubs In Laravel</h3>
+<h3>Route Model Binding In Laravel</h3>
 </center>
 <hr>
 <div class="container">

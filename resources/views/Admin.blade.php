@@ -366,6 +366,24 @@ Route Model Binding
 </a>
 </td>
 </tr>
+<tr>
+<td>38</td>
+<td>Controller38</td>
+<td>Controller_38</td>
+<td><a href="{{route('controller38.index')}}">
+Ajax Request
+</a>
+</td>
+</tr>
+<tr>
+<td>39</td>
+<td>Controller39</td>
+<td>Controller_39</td>
+<td><a href="{{route('controller39.index')}}">
+CRUD Operation Through Ajax
+</a>
+</td>
+</tr>
 </table>
 </div>
 @endsection

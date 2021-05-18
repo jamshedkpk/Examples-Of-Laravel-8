@@ -1,21 +1,22 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Models\Student;
+use App\Models\Department;
 
-class Controller_37 extends Controller
+class Controller_38 extends Controller
 {
-
 public function index()
 {
-return view('View_37');
+return view('View_38');
 }
-
 public function create()
 {
+$data=Department::all();
+return $data;
 }
 public function store(Request $request)
 {
+echo($request);
 }
 public function show($id)
 {
